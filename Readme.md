@@ -24,7 +24,7 @@
 
 Clone the repository:
 ```
-git clone https://github.com/Gitesh08/Track-my-resume.git
+git clone https://github.com/jitkoley/Resume_Tracking_System.git
 ```
 
 Navigate to the project directory:
