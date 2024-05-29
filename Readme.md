@@ -29,7 +29,7 @@ git clone https://github.com/jitkoley/Resume_Tracking_System.git
 
 Navigate to the project directory:
 ```
-cd Track-my-resume
+cd Resume_Tracking_System
 ```
 
 Create a Python virtual environment:
