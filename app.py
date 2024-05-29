@@ -98,12 +98,12 @@ st.text(" \n")
 
 
 job_description = st.text_area("Paste the Job Description",height=300)
-uploaded_file = st.file_uploader("Upload Your Resume", type=["pdf", "docx"], help="Please upload a PDF or DOCX file")
+uploaded_file = st.sidebar.file_uploader("Upload Your Resume", type=["pdf", "docx"], help="Please upload a PDF or DOCX file")
 
 if uploaded_file is not None:
-    st.markdown('<h8 style="color: lightgreen;text-align: center;">File uploaded successfully!</h8>', unsafe_allow_html=True)
+    st.sidebar.markdown('<h8 style="color: lightgreen;text-align: center;">File uploaded successfully!</h8>', unsafe_allow_html=True)
 else:
-    st.markdown('<h8 style="color: red;text-align: center;">Please upload your Resume!</h8>', unsafe_allow_html=True)
+    st.sidebar.markdown('<h8 style="color: red;text-align: center;">Please upload your Resume!</h8>', unsafe_allow_html=True)
     
     
 st.text(" \n")
@@ -245,11 +245,11 @@ a:hover, a:active {
 
 .footer-left {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    right: 10px; /* Adjust the distance from the right side */
+    bottom: 10px; /* Adjust the distance from the bottom */
     background-color: transparent;
     color: blue;
-    text-align: left;
+    text-align: right;
     padding: 10px;
 }
 </style>
